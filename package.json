@@ -1,0 +1,27 @@
+{
+  "name": "italbazar-autotests",
+  "version": "1.0.0",
+  "description": "Autotests for italbazar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akoliada77/italbazar.git"
+  },
+  "author": "koliada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akoliada77/italbazar/issues"
+  },
+  "homepage": "https://github.com/Akoliada77/italbazar#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-jest": "^27.2.5",
+    "jest": "^27.2.5",
+    "jest-puppeteer": "^6.0.0",
+    "puppeteer": "^10.4.0"
+  }
+}
