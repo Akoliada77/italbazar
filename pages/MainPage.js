@@ -1,7 +1,6 @@
-import { tsArrayType } from "@babel/types"
 import { expect } from "chai"
-import { waitForText, shouldNotExist, click, getText, getCount, typeText, selectText } from "../lib/helpers"
-import { generateID, generateEmail } from "../lib/utils"
+const { waitForText, shouldNotExist, click, getText, getCount, typeText, selectText } = require("../lib/helpers")
+const { generateID, generateEmail } = require("../lib/utils")
 
 
 export default class MainPage {
@@ -36,5 +35,4 @@ export default class MainPage {
         await click(page, '.dotted_button_button__mDsw6')
         await page.waitForSelector('.stores_button_dropdownContent__r0-b-')
     }
-    
 }
