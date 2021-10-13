@@ -49,7 +49,8 @@ export default class Navbar {
     }
     async clickOnForGirls() {
         await mainpage.visit()
-        await click(page, '#root > div:nth-child(1) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(4) > div > div > a > div')
+        await page.waitForTimeout(1500)
+        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(4) > div > div > a > div')
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/dlya_detey/dlya_devochek/') 
@@ -68,10 +69,40 @@ export default class Navbar {
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/brands/') 
     }
-    async choosenMan() {
+    async chooseMan() {
         await click(page,'#root > div.utils_desktop__2aNwE > div > div:nth-child(2) > div > nav > div.middle_header_for_man__2Dz3g.gender_button_container__EsmC6 > div > div')
+        await page.waitForTimeout(1500)
     }
     async chooseWoman() {
         await click(page,'#root > div.utils_desktop__2aNwE > div > div:nth-child(2) > div > nav > div.middle_header_for_woman__Ey3VB.gender_button_container__EsmC6 > div > div')
+        await page.waitForTimeout(1500)
+    }
+    async clickOnClothesMan() {
+        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(1) > div > div')
+        await page.waitForSelector('.desktop_page_h1__2Jzco')
+        let url = page.url()
+        expect(url).to.equal('https://www.staging.italbazar.ru/catalog/odezhda/muzhskaya/')
+    }
+    async clickOnShoesMan() {
+        await mainpage.visit()
+        await click (page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(2) > div > div')
+        await page.waitForSelector('.desktop_page_h1__2Jzco')
+        let url = page.url()
+        expect(url).to.equal('https://www.staging.italbazar.ru/catalog/obuv/muzhskaya/')
+    }
+    async clickOnАccessoriesMan() {
+        await mainpage.visit()
+        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(3) > div > div > a > div')
+        await page.waitForSelector('.desktop_page_h1__2Jzco')
+        let url = page.url()
+        expect(url).to.equal('https://www.staging.italbazar.ru/catalog/aksessuary/muzhskie/')
+    }
+    async clickOnForBoys() {
+        await mainpage.visit()
+        await page.waitForTimeout(1500)
+        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(4) > div > div > a > div')
+        await page.waitForSelector('.desktop_page_h1__2Jzco')
+        let url = page.url()
+        expect(url).to.equal('https://www.staging.italbazar.ru/catalog/dlya_detey/dlya_malchikov/') 
     }
 }

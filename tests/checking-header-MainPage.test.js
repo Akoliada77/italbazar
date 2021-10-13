@@ -4,7 +4,7 @@ import MainPage from '../pages/MainPage'
 describe ('Checking if links work in Homepage', () => {
     let mainpage
     let navbar
-    jest.setTimeout(20000)
+    jest.setTimeout(30000)
 
     beforeAll(async() =>{
         mainpage = new MainPage()
@@ -30,18 +30,17 @@ describe ('Checking if links work in Homepage', () => {
         await navbar.clickOnShoes()
         await navbar.clickOnАccessories()
         await navbar.clickOnForGirls()
-        await navbar.clickOnForHome()
+        // await navbar.clickOnForHome()
     })
     it('ClickOnEveryLinkOnNavbarAsMan', async() =>{
         await mainpage.visit()
         await navbar.chooseMan()
-        await navbar.clickOnClothes()
-        await navbar.clickOnShoes()
-        await navbar.clickOnАccessories()
-        await navbar.clickOnForGirls()
-        await navbar.clickOnForHome()
+        await navbar.clickOnClothesMan()
+        await navbar.clickOnShoesMan()
+        await navbar.clickOnАccessoriesMan()
+        await navbar.clickOnForBoys()
     })
-    it('CheckMiddleNavbar', async() =>{
+    it.skip('CheckMiddleNavbar', async() =>{
         await mainpage.visit()
         await navbar.clickOnFavorite()
         await navbar.hoverProfile()
