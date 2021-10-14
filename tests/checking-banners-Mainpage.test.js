@@ -15,10 +15,14 @@ describe ('Checking banner in Mainpage', () => {
     })
     it('Check that banners are shown', async() =>{
         await mainpage.visit()
+        await mainpage.closeCookie()
         await banner.checkIfBannersAreDisplayed()
     })
     it.skip('CheckSwitchingBanners', async() =>{
         await mainpage.visit()
         await banner.checkSwitchingBanners()
+    })
+    it('CheckCarouselIsDisplayed', async() =>{
+        await banner.checkCarouselIsDisplayed()
     })
 })

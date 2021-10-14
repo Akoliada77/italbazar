@@ -10,9 +10,11 @@ export default class MainPage {
         await page.waitForSelector(".middle_header_navBlock__V7lVb")
     }
     async closeCookie() {
-        await page.waitForSelector('.cookie_modal_container__1THr2')
-        await click (page, '.gray_full_button_button__lIBCl.cookie_modal_button__2FwX-')
-        await shouldNotExist(page, '.cookie_modal_container__1THr2')
+        const cookie = await page.$('.cookie_modal_container__1THr2')
+        if (cookie) {
+            await click (page, '.gray_full_button_button__lIBCl.cookie_modal_button__2FwX-')
+            await shouldNotExist(page, '.cookie_modal_container__1THr2')
+        }
         // const cookies = await page.cookies()
         // expect(cookies.jsonValue()).to.have.property('cookiesAccepted', {name: 'cookiesAccepted'})
     }

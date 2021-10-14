@@ -28,4 +28,7 @@ export default class Banner {
         // await click(page, '.#root > div.carousel_container__w-zAD > div.utils_desktop__2aNwE > div > div > div.slick-arrow.slick-next')
         // await page.waitForSelector(banner3).contains('.slick-slide.slick-active.slick-current')
     }
+    async checkCarouselIsDisplayed() {
+        await page.$('.carousel_box__2Sjsr')
+    }
 }

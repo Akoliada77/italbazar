@@ -2,7 +2,7 @@ import Navbar from '../elements/Navbar'
 import MainPage from '../pages/MainPage'
 import Banner from '../elements/Banner'
 
-describe ('Checking header in Mainpage', () => {
+describe ('Checking navbar in Mainpage', () => {
     let mainpage
     let navbar
     let banner
@@ -15,6 +15,7 @@ describe ('Checking header in Mainpage', () => {
     })
     it('ClickOnEveryLinkOnNavbarAsWoman', async() =>{
         await mainpage.visit()
+        await mainpage.closeCookie()
         await navbar.chooseWoman()
         await navbar.clickOnClothes()
         await navbar.clickOnShoes()
@@ -34,5 +35,10 @@ describe ('Checking header in Mainpage', () => {
         await navbar.hoverProfile()
         await navbar.hoverCart()
         await navbar.clickOnFavorite()
+    })
+    it('CheckingOtherLinksInNavbar', async() =>{
+        await mainpage.visit()
+        await navbar.clickOnForHome()
+        // await navbar.clickOnBrands()
     })
 })

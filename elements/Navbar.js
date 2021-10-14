@@ -105,4 +105,18 @@ export default class Navbar {
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/dlya_detey/dlya_malchikov/') 
     }
+    async clickOnForHome() {
+        await mainpage.visit()
+        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(5) > div > div > a > div')
+        await page.waitForSelector('.desktop_page_h1__2Jzco')
+        let url = page.url()
+        expect(url).to.equal('https://www.staging.italbazar.ru/catalog/dlya_doma/') 
+    }
+    async clickOnBrands() {
+        await mainpage.visit()
+        await click(page, '#root > div:nth-child(1) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(6) > a > div > div')
+        await page.waitForSelector('.desktop_page_h1__2Jzco')
+        let url = page.url()    
+        expect(url).to.equal('https://www.staging.italbazar.ru/brands/') 
+    }
 }
