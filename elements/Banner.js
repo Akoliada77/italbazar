@@ -12,6 +12,6 @@ navbar = new Navbar()
 
 export default class Banner {
     async checkIfBannersAreDisplayed() {
-        await mainpage.visit()
+        await page.waitForSelector('.carousel_container__w-zAD')
     }
 }

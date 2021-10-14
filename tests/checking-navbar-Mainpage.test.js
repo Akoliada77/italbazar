@@ -2,7 +2,7 @@ import Navbar from '../elements/Navbar'
 import MainPage from '../pages/MainPage'
 import Banner from '../elements/Banner'
 
-describe ('Checking header in Homepage', () => {
+describe ('Checking header in Mainpage', () => {
     let mainpage
     let navbar
     let banner
