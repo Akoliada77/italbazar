@@ -14,7 +14,7 @@ export default class MainPage {
         await click (page, '.gray_full_button_button__lIBCl.cookie_modal_button__2FwX-')
         await shouldNotExist(page, '.cookie_modal_container__1THr2')
         // const cookies = await page.cookies()
-        // expect(cookies).to.be.an('array').that.does.have.deep.property('cookiesAccepted', {name: 'cookiesAccepted'})
+        // expect(cookies.jsonValue()).to.have.property('cookiesAccepted', {name: 'cookiesAccepted'})
     }
     async clickOnAboutUs() {
         await click (page, '#root > div:nth-child(2) > div > div.top_header_box__2h_A3 > div > nav > a:nth-child(1) > div > div')

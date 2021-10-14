@@ -9,7 +9,7 @@ mainpage = new MainPage()
 
 export default class Navbar {
     async clickOnFavorite() {
-        await click (page, '#root > div:nth-child(1) > div > div:nth-child(2) > div > nav > div.middle_header_heart__1AwTJ > div > a')
+        await click (page, '.heart_button_heart__3v8Wu')
         await page.waitForNavigation()
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/account/?targetScreen=favorite')

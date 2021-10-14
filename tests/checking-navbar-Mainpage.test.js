@@ -29,10 +29,10 @@ describe ('Checking header in Mainpage', () => {
         await navbar.clickOnАccessoriesMan()
         await navbar.clickOnForBoys()
     })
-    it.skip('CheckMiddleNavbar', async() =>{
+    it('CheckMiddleNavbar', async() =>{
         await mainpage.visit()
-        await navbar.clickOnFavorite()
         await navbar.hoverProfile()
         await navbar.hoverCart()
+        await navbar.clickOnFavorite()
     })
 })

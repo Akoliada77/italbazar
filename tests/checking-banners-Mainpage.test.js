@@ -17,4 +17,8 @@ describe ('Checking banner in Mainpage', () => {
         await mainpage.visit()
         await banner.checkIfBannersAreDisplayed()
     })
+    it.skip('CheckSwitchingBanners', async() =>{
+        await mainpage.visit()
+        await banner.checkSwitchingBanners()
+    })
 })
