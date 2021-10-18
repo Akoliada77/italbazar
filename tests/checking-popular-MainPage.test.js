@@ -3,6 +3,7 @@ import MainPage from '../pages/MainPage'
 import Banner from '../elements/Banner'
 import NewCollection from '../elements/NewCollection'
 import Popular from '../elements/Popular'
+import { prototype } from 'mocha'
 
 describe ('Checking popular container in Mainpage', () => {
     let mainpage
@@ -17,7 +18,7 @@ describe ('Checking popular container in Mainpage', () => {
         navbar = new Navbar()
         banner = new Banner()
         newcollection = new NewCollection()
-            popular = new Popular()
+        popular = new Popular()
     })
     it('Check that Popular continer is displayed', async() =>{
         await mainpage.visit()
@@ -29,5 +30,13 @@ describe ('Checking popular container in Mainpage', () => {
     })
     it('Check hover of product is displayed', async() =>{
         await popular.checkHoverOfProduct()
+    })
+    it('Check transition to product card', async() =>{
+        await mainpage.visit()
+        await popular.checkInfoOfProductInCard()
+    })
+    it('Check About button in popular section', async() =>{
+        await mainpage.visit()
+        await popular.checkAboutButton()
     })
 })
