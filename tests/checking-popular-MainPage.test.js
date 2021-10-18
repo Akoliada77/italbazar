@@ -4,7 +4,7 @@ import Banner from '../elements/Banner'
 import NewCollection from '../elements/NewCollection'
 import Popular from '../elements/Popular'
 
-describe ('Checking new collection in Mainpage', () => {
+describe ('Checking popular container in Mainpage', () => {
     let mainpage
     let navbar
     let banner
@@ -17,13 +17,17 @@ describe ('Checking new collection in Mainpage', () => {
         navbar = new Navbar()
         banner = new Banner()
         newcollection = new NewCollection()
-        popular = new Popular()
+            popular = new Popular()
     })
     it('Check that Popular continer is displayed', async() =>{
         await mainpage.visit()
+        await mainpage.closeCookie()
         await popular.isPopularDisplayed()
     })
     it('Check title of Popular container', async() =>{
         await popular.checkTitleOfPopular()
+    })
+    it('Check hover of product is displayed', async() =>{
+        await popular.checkHoverOfProduct()
     })
 })
