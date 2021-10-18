@@ -3,7 +3,7 @@ import MainPage from '../pages/MainPage'
 import Banner from '../elements/Banner'
 import NewCollection from '../elements/NewCollection'
 
-describe ('Checking navbar in Mainpage', () => {
+describe ('Checking new collection in Mainpage', () => {
     let mainpage
     let navbar
     let banner
@@ -27,6 +27,15 @@ describe ('Checking navbar in Mainpage', () => {
     })
     it('Check Details Button', async() =>{
         await newcollection.checkDetailsButton()
-        
+        await mainpage.visit()
+        // await newcollection.check2DetailsButton()
     })
+    it('Check See all new products of New collection', async() =>{
+        await mainpage.visit()
+        await newcollection.clickOnSeeAllNewProducts()
+    })
+    it('Check flipping the pictures', async() =>{
+        await mainpage.visit()
+    })
+
 })

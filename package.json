@@ -4,6 +4,7 @@
   "description": "Autotests for italbazar",
   "main": "index.js",
   "scripts": {
+    "test1": "jest --forceExit ./tests/example.js",
     "test": "jest --forceExit"
   },
   "repository": {

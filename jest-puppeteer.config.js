@@ -1,6 +1,6 @@
 module.exports = {
     launch: {
-        headless: false,
+        headless: true,
         defaultViewport: null,
         // viewport: { width: 1440, height: 900 },
         // args: ['--start-maximized'], 
