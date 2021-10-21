@@ -31,7 +31,7 @@ describe ('Checking popular container in Mainpage', () => {
     it('Check hover of product is displayed', async() =>{
         await popular.checkHoverOfProduct()
     })
-    it('Check transition to product card', async() =>{
+    it.skip('Check transition to product card', async() =>{
         await mainpage.visit()
         await popular.checkInfoOfProductInCard()
     })

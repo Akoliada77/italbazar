@@ -3,6 +3,7 @@ const { generateEmail, generateID, generateNumbers } = require('../lib/utils')
 import { expect, use } from 'chai'
 import { ElementHandle } from 'puppeteer'
 import MainPage from '../pages/MainPage'
+import puppeteer from 'puppeteer'
 
 let mainpage
 
@@ -29,12 +30,12 @@ export default class Popular {
         const cost = await getText(page, '#root > div.popular_products_container__164UX > div > div.slider-with-round-arrows > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div > a:nth-child(1) > div.price_block_price__naE0S > span.price_block_common__RNl1X.price_block_currentPrice__1Q9Vc.price_block_black__25pjN > span')
         const title = await getText(page, '#root > div.popular_products_container__164UX > div > div.slider-with-round-arrows > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div > a:nth-child(1) > div.product_card_productName__3UB9Z')
         const brand = await getText(page, '#root > div.popular_products_container__164UX > div > div.slider-with-round-arrows > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div > a:nth-child(2) > div')
-        await click(page,'#root > div.popular_products_container__164UX > div > div.slider-with-round-arrows > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div > a:nth-child(1) > div.product_card_preview__5FpYL')
-        await page.waitForNavigation()
-        let cost1 = await getText(page, '#root > div:nth-child(3) > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_priceBlock__2XeTd > div.main_info_block_currentPrice__31hdv > span')
-        let title1 = await getText(page, '#root > div:nth-child(3) > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productName__1qmIM')
-        let brand1 = await getText(page, '#root > div:nth-child(3) > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productBrand__2K-5p')
-        // expect(cost).to.equal(cost1)
+        await click(page,'#root > div.popular_products_container__164UX > div > div.slider-with-round-arrows > div > div.slick-list > div > div.slick-slide.slick-active.slick-current > div > div > div')
+        expect(await isElementVisible('.product_images_slider_mainSliderContainer__yhlON')).to.be.true
+        let cost1 = await getText(page, '#root > div:nth-child(3) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_priceBlock__2XeTd > div.main_info_block_currentPrice__31hdv > span')
+        let title1 = await getText(page, '#root > div:nth-child(3) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productName__1qmIM')
+        let brand1 = await getText(page, '#root > div:nth-child(3) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productBrand__2K-5p')
+        expect(cost).to.equal(cost1)
         expect(title).to.equal(title1)
         expect(brand).to.equal(brand1)
     }

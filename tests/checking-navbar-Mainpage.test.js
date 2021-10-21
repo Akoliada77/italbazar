@@ -21,6 +21,7 @@ describe ('Checking navbar in Mainpage', () => {
         await navbar.clickOnShoes()
         await navbar.clickOnАccessories()
         await navbar.clickOnForGirls()
+        await navbar.clickOnNewProducts()
     })
     it('ClickOnEveryLinkOnNavbarAsMan', async() =>{
         await mainpage.visit()
@@ -29,6 +30,7 @@ describe ('Checking navbar in Mainpage', () => {
         await navbar.clickOnShoesMan()
         await navbar.clickOnАccessoriesMan()
         await navbar.clickOnForBoys()
+        await navbar.clickOnNewProductsAsMan()
     })
     it('CheckMiddleNavbar', async() =>{
         await mainpage.visit()
@@ -39,6 +41,6 @@ describe ('Checking navbar in Mainpage', () => {
     it('CheckingOtherLinksInNavbar', async() =>{
         await mainpage.visit()
         await navbar.clickOnForHome()
-        // await navbar.clickOnBrands()
+        await navbar.clickOnBrands()
     })
 })
