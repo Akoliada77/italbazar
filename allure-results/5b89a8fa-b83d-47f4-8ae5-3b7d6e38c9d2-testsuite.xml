@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635100506508' stop='1635100561508'>
+    <name>Checking banner in Mainpage</name>
+    <title>Checking banner in Mainpage</title>
+    <test-cases>
+        <test-case start='1635100506509' status='failed' stop='1635100536522'>
+            <name>Check that news are displayed</name>
+            <title>Check that news are displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: Navigation timeout of 30000 ms exceeded</message>
+                <stack-trace>TimeoutError: Navigation timeout of 30000 ms exceeded
+                    at /Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/LifecycleWatcher.ts:204:18
+                    at runNextTicks (internal/process/task_queues.js:60:5)
+                    at listOnTimeout (internal/timers.js:526:9)
+                    at processTimers (internal/timers.js:500:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1635100536522' status='passed' stop='1635100536533'>
+            <name>Check the title of News section</name>
+            <title>Check the title of News section</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100536533' status='failed' stop='1635100561476'>
+            <name>Click on More News button</name>
+            <title>Click on More News button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Protocol error (Runtime.callFunctionOn): Target closed.</message>
+                <stack-trace>Error: Protocol error (Runtime.callFunctionOn): Target closed.
+                    at /Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/Connection.ts:291:57
+                    at new Promise (&lt;anonymous>)
+                    at CDPSession.send (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/Connection.ts:290:12)
+                    at ExecutionContext._evaluateInternal (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/ExecutionContext.ts:254:44)
+                    at ExecutionContext.evaluateHandle (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/ExecutionContext.ts:193:17)
+                    at WaitTask.rerun (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/DOMWorld.ts:816:31)
+                    at processTicksAndRejections (internal/process/task_queues.js:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1635100561476' status='failed' stop='1635100561508'>
+            <name>Check transition to news page</name>
+            <title>Check transition to news page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Protocol error (Page.navigate): Session closed. Most likely the page has been closed.</message>
+                <stack-trace>Error: Protocol error (Page.navigate): Session closed. Most likely the page has been closed.
+                    at CDPSession.send (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/Connection.ts:276:9)
+                    at navigate (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/FrameManager.ts:184:39)
+                    at FrameManager.navigateFrame (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/FrameManager.ts:162:7)
+                    at Frame.goto (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/FrameManager.ts:643:37)
+                    at Page.goto (/Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/Page.ts:1734:49)
+                    at MainPage.visit (/Users/a123/Desktop/italbazar autotests/pages/MainPage.js:8:20)
+                    at Object.&lt;anonymous> (/Users/a123/Desktop/italbazar autotests/tests/checking-news-Mainpage.test.js:34:24)
+                    at Object.asyncJestTest (/Users/a123/Desktop/italbazar autotests/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:173:37)
+                    at /Users/a123/Desktop/italbazar autotests/node_modules/jest-jasmine2/build/queueRunner.js:89:12
+                    at new Promise (&lt;anonymous>)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

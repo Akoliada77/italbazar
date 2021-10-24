@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635101541713' stop='1635101600858'>
+    <name>Checking navbar in Mainpage</name>
+    <title>Checking navbar in Mainpage</title>
+    <test-cases>
+        <test-case start='1635101541714' status='passed' stop='1635101571375'>
+            <name>ClickOnEveryLinkOnNavbarAsWoman</name>
+            <title>ClickOnEveryLinkOnNavbarAsWoman</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635101571375' status='passed' stop='1635101590105'>
+            <name>ClickOnEveryLinkOnNavbarAsMan</name>
+            <title>ClickOnEveryLinkOnNavbarAsMan</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635101590105' status='passed' stop='1635101592825'>
+            <name>CheckMiddleNavbar</name>
+            <title>CheckMiddleNavbar</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635101592825' status='passed' stop='1635101600858'>
+            <name>CheckingOtherLinksInNavbar</name>
+            <title>CheckingOtherLinksInNavbar</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

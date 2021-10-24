@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test1": "jest --forceExit ./tests/example.js",
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "rr": "jest --forceExit",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "result": "jest-allure-reporter"
   },
   "repository": {
     "type": "git",
@@ -18,17 +21,25 @@
   },
   "homepage": "https://github.com/Akoliada77/italbazar#readme",
   "dependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "babel-jest": "^27.2.5",
-    "chai": "^4.3.4",
-    "jest": "^27.2.5",
+    "babel-jest": "^27.3.1",
+    "babel-polyfill": "^6.26.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jest": "^27.3.1",
+    "jest-allure-reporter": "^1.2.3",
     "jest-puppeteer": "^6.0.0",
-    "mocha": "^9.1.2",
     "prettier": "^2.4.1",
     "puppeteer": "^10.4.0"
   },
   "devDependencies": {
-    "jest-extended": "^1.0.0"
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
+    "chai": "^4.3.4",
+    "esm": "^3.2.25",
+    "jest-allure": "^0.1.3",
+    "jest-extended": "^1.1.0",
+    "mocha": "^9.1.3"
   }
 }

@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635100610864' stop='1635100651168'>
+    <name>Checking popular container in Mainpage</name>
+    <title>Checking popular container in Mainpage</title>
+    <test-cases>
+        <test-case start='1635100610865' status='passed' stop='1635100640663'>
+            <name>Check that Popular continer is displayed</name>
+            <title>Check that Popular continer is displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100640663' status='passed' stop='1635100640669'>
+            <name>Check title of Popular container</name>
+            <title>Check title of Popular container</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100640669' status='passed' stop='1635100640742'>
+            <name>Check hover of product is displayed</name>
+            <title>Check hover of product is displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100640742' status='pending' stop='1635100640742'>
+            <name>Check transition to product card</name>
+            <title>Check transition to product card</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1635100640742' status='passed' stop='1635100651167'>
+            <name>Check About button in popular section</name>
+            <title>Check About button in popular section</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

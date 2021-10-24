@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635100506562' stop='1635100536576'>
+    <name>Checking banner in Mainpage</name>
+    <title>Checking banner in Mainpage</title>
+    <test-cases>
+        <test-case start='1635100506563' status='failed' stop='1635100536576'>
+            <name>Check SeeAll section is displayed</name>
+            <title>Check SeeAll section is displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: Navigation timeout of 30000 ms exceeded</message>
+                <stack-trace>TimeoutError: Navigation timeout of 30000 ms exceeded
+                    at /Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/LifecycleWatcher.ts:204:18
+                    at runNextTicks (internal/process/task_queues.js:60:5)
+                    at listOnTimeout (internal/timers.js:526:9)
+                    at processTimers (internal/timers.js:500:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

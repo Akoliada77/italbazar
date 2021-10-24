@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635101541686' stop='1635101561522'>
+    <name>Checking new collection in Mainpage</name>
+    <title>Checking new collection in Mainpage</title>
+    <test-cases>
+        <test-case start='1635101541687' status='passed' stop='1635101551663'>
+            <name>Check that New Collection is displayed</name>
+            <title>Check that New Collection is displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635101551663' status='passed' stop='1635101551769'>
+            <name>Check the tile of New collection</name>
+            <title>Check the tile of New collection</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635101551769' status='passed' stop='1635101556572'>
+            <name>Check Details Button</name>
+            <title>Check Details Button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635101556572' status='passed' stop='1635101560013'>
+            <name>Check See all new products of New collection</name>
+            <title>Check See all new products of New collection</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635101560013' status='passed' stop='1635101561522'>
+            <name>Check flipping the pictures</name>
+            <title>Check flipping the pictures</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

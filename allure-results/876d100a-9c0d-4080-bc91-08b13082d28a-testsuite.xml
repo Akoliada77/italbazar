@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635100506507' stop='1635100561195'>
+    <name>Checking new collection in Mainpage</name>
+    <title>Checking new collection in Mainpage</title>
+    <test-cases>
+        <test-case start='1635100506509' status='failed' stop='1635100536522'>
+            <name>Check that New Collection is displayed</name>
+            <title>Check that New Collection is displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: Navigation timeout of 30000 ms exceeded</message>
+                <stack-trace>TimeoutError: Navigation timeout of 30000 ms exceeded
+                    at /Users/a123/Desktop/italbazar autotests/node_modules/puppeteer/src/common/LifecycleWatcher.ts:204:18
+                    at runNextTicks (internal/process/task_queues.js:60:5)
+                    at listOnTimeout (internal/timers.js:526:9)
+                    at processTimers (internal/timers.js:500:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1635100536522' status='passed' stop='1635100536543'>
+            <name>Check the tile of New collection</name>
+            <title>Check the tile of New collection</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100536543' status='failed' stop='1635100539663'>
+            <name>Check Details Button</name>
+            <title>Check Details Button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>assert.strictEqual(received, expected)
+                
+                Expected value to strictly be equal to:
+                  true
+                Received:
+                  false
+                
+                Message:
+                  expected false to be true
+                    at NewCollection.checkDetailsButton (/Users/a123/Desktop/italbazar autotests/elements/NewCollection.js:27:9)
+                    at Object.&lt;anonymous> (/Users/a123/Desktop/italbazar autotests/tests/checking-newcollection-Mainpage.test.js:29:9)</message>
+                <stack-trace>Error: assert.strictEqual(received, expected)
+                
+                Expected value to strictly be equal to:
+                  true
+                Received:
+                  false
+                
+                Message:
+                  expected false to be true
+                    at NewCollection.checkDetailsButton (/Users/a123/Desktop/italbazar autotests/elements/NewCollection.js:27:9)
+                    at Object.&lt;anonymous> (/Users/a123/Desktop/italbazar autotests/tests/checking-newcollection-Mainpage.test.js:29:9)
+                    at Env.fail (/Users/a123/Desktop/italbazar autotests/node_modules/jest-jasmine2/build/jasmine/Env.js:695:59)
+                    at Function.next.fail (/Users/a123/Desktop/italbazar autotests/node_modules/jest-jasmine2/build/queueRunner.js:84:22)
+                    at /Users/a123/Desktop/italbazar autotests/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:187:18</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1635100539663' status='passed' stop='1635100557647'>
+            <name>Check See all new products of New collection</name>
+            <title>Check See all new products of New collection</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100557647' status='passed' stop='1635100561195'>
+            <name>Check flipping the pictures</name>
+            <title>Check flipping the pictures</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

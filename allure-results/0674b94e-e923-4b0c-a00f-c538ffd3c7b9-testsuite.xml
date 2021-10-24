@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635100165079' stop='1635100186642'>
+    <name>Checking banner in Mainpage</name>
+    <title>Checking banner in Mainpage</title>
+    <test-cases>
+        <test-case start='1635100165080' status='passed' stop='1635100179325'>
+            <name>Check that news are displayed</name>
+            <title>Check that news are displayed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100179325' status='passed' stop='1635100179335'>
+            <name>Check the title of News section</name>
+            <title>Check the title of News section</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100179335' status='passed' stop='1635100181201'>
+            <name>Click on More News button</name>
+            <title>Click on More News button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1635100181201' status='passed' stop='1635100186641'>
+            <name>Check transition to news page</name>
+            <title>Check transition to news page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
