@@ -24,6 +24,7 @@ export default class NewCollection {
         const brandname = await getText(page, '#root > div.new_collection_box__3jgDA > div.utils_desktop__2aNwE > div > div > div.desktop_collection_productsBox__1HxQC > div.desktop_collection_leftBox__3k2nh > div > div > div.collection_item_textBlock__2raTe > div > div.collection_item_brand__1Nepu')
         const cost = await getText(page, '#root > div.new_collection_box__3jgDA > div.utils_desktop__2aNwE > div > div > div.desktop_collection_productsBox__1HxQC > div.desktop_collection_leftBox__3k2nh > div > div > div.collection_item_textBlock__2raTe > div > div.collection_item_pricesBlock__3Mg8- > div.collection_item_prices__1gKQJ > div.collection_item_salePrice__2pWoQ > span')
         await click(page,'.collection_item_itemLink__1S8x2.undefined')
+        await page.waitForNavigation()
         expect(await isElementVisible('.product_images_slider_mainSliderContainer__yhlON')).to.be.true
         const name2 = await getText(page, '#root > div:nth-child(3) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productName__1qmIM')
         const brandname2 = await getText(page, '#root > div:nth-child(3) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productBrand__2K-5p')

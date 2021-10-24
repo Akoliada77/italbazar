@@ -6,7 +6,7 @@ describe ('Checking navbar in Mainpage', () => {
     let mainpage
     let navbar
     let banner
-    jest.setTimeout(30000)
+    jest.setTimeout(40000)
 
     beforeAll(async() =>{
         mainpage = new MainPage()
