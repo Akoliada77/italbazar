@@ -3,7 +3,7 @@ import MainPage from '../pages/MainPage'
 import Banner from '../elements/Banner'
 import SeeAll from '../elements/SeeAll'
 
-describe ('Checking banner in Mainpage', () => {
+describe ('Checking SeeAll in Mainpage', () => {
     let mainpage
     let navbar
     let banner

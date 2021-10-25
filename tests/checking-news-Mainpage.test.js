@@ -4,7 +4,7 @@ import Banner from '../elements/Banner'
 import SeeAll from '../elements/SeeAll'
 import News from '../elements/News'
 
-describe ('Checking banner in Mainpage', () => {
+describe ('Checking news in Mainpage', () => {
     let mainpage
     let navbar
     let banner

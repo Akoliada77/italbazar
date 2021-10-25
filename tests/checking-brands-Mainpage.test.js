@@ -4,7 +4,7 @@ import Banner from '../elements/Banner'
 import SeeAll from '../elements/SeeAll'
 import Brands from '../elements/Brands'
 
-describe ('Checking marketbox in Mainpage', () => {
+describe ('Checking brands in Mainpage', () => {
     let mainpage
     let navbar
     let brands
