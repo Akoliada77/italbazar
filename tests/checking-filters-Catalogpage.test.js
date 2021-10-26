@@ -12,7 +12,7 @@ describe ('Checking filters in CatalogPage', () => {
         filters = new Filters()
     })
 
-    it.skip('Filters are displayed', async() => {
+    it('Filters are displayed', async() => {
         await catalogpage.visit()
         await catalogpage.closeCookie()
         await filters.filtersAreDisplayed()
