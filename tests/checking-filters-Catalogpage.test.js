@@ -56,5 +56,9 @@ describe ('Checking filters in CatalogPage', () => {
         await catalogpage.visit()
         await filters.isNumberSortDisplayed()
     })
+    it('Check that number sort works',async()=>{
+        await catalogpage.visit()
+        await filters.doesNumberSortWorks()
+    })
 
 })

@@ -79,4 +79,14 @@ export default class Filters {
     async isNumberSortDisplayed() {
         expect(await isElementVisible('.desktop_page_productsLimitsBox__1pMpm')).to.be.true
     }
+    async doesNumberSortWorks() {
+        expect(await getText(page,'#root > div:nth-child(3) > div > div > div.desktop_page_titleBox__3aVbX > div > div > div > div > div > div.css-1hwfws3 > div')).to.eq("24")
+        expect(await getCount(page, '.product_card_card__36uRe')).to.eq(24)
+        await click(page,'#root > div:nth-child(3) > div > div > div.desktop_page_titleBox__3aVbX > div > div > div > div > div > div.css-1ort343')
+        expect(await isElementVisible('.css-13tnpzo')).to.be.true
+        await click(page,'#react-select-2-option-1')
+        await page.waitForTimeout(1500)
+        expect(await getCount(page, '.product_card_card__36uRe')).to.eq(48)
+        expect(page.url()).to.include('?productsLimit=48')
+    }
 }
