@@ -1,7 +1,5 @@
 import Navbar from '../elements/Navbar'
 import MainPage from '../pages/MainPage'
-import Banner from '../elements/Banner'
-import SeeAll from '../elements/SeeAll'
 import Brands from '../elements/Brands'
 import Contactblock from '../elements/Contactblock'
 

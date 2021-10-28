@@ -3,7 +3,6 @@ import MainPage from '../pages/MainPage'
 import Banner from '../elements/Banner'
 import NewCollection from '../elements/NewCollection'
 import Popular from '../elements/Popular'
-import { prototype } from 'mocha'
 
 describe ('Checking popular container in Mainpage', () => {
     let mainpage
