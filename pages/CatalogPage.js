@@ -4,8 +4,7 @@ const { generateEmail, generateID, generateNumbers } = require('../lib/utils')
 
 export default class CatalogPage {
     async visit() { 
-        await page.goto('https://www.staging.italbazar.ru/catalog/')
-        expect(page.url()).to.eq('https://www.staging.italbazar.ru/catalog/')
+        await page.goto('https://www.staging.italbazar.ru/catalog/odezhda/zhenskaya/')
         expect(await isElementVisible('.desktop_page_mainBox__3129p')).to.be.true
         expect(await isElementVisible('.header_line__21rZI')).to.be.true
     }

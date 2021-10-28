@@ -1,1 +1,501 @@
-[ ]
+[ {
+  "uid" : "bce49b298d3d8931",
+  "name" : "Check hover of product is displayed",
+  "time" : {
+    "start" : 1635419009402,
+    "stop" : 1635419009489,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e86fdf799652a999",
+  "name" : "Check that marketbox is loaded",
+  "time" : {
+    "start" : 1635418993776,
+    "stop" : 1635418995617,
+    "duration" : 1841
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d514c51fde7609e0",
+  "name" : "CheckMiddleNavbar",
+  "time" : {
+    "start" : 1635418957219,
+    "stop" : 1635418959500,
+    "duration" : 2281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92dfd19d249ddb4e",
+  "name" : "Check that seasons filter work",
+  "time" : {
+    "start" : 1635418916697,
+    "stop" : 1635418918448,
+    "duration" : 1751
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e4f3ad992ed3738",
+  "name" : "Check About button in popular section",
+  "time" : {
+    "start" : 1635419009489,
+    "stop" : 1635419012901,
+    "duration" : 3412
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9cc83bd7fbaf0c1",
+  "name" : "ClickOnEveryLinkInHeader",
+  "time" : {
+    "start" : 1635419003524,
+    "stop" : 1635419006106,
+    "duration" : 2582
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94aea7a66b84e95d",
+  "name" : "CookieAreAccepted",
+  "time" : {
+    "start" : 1635419003522,
+    "stop" : 1635419003524,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc49c4f1cca33705",
+  "name" : "Check that material filter work",
+  "time" : {
+    "start" : 1635418916697,
+    "stop" : 1635418916697,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ff885bbc2dce727f",
+  "name" : "CheckCarouselIsDisplayed",
+  "time" : {
+    "start" : 1635419025800,
+    "stop" : 1635419025801,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c88dea4e63c0b9f",
+  "name" : "Check that Brands section is displayed",
+  "time" : {
+    "start" : 1635165154979,
+    "stop" : 1635165162641,
+    "duration" : 7662
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f58ebb475496ed02",
+  "name" : "Filters are displayed",
+  "time" : {
+    "start" : 1635418902296,
+    "stop" : 1635418904802,
+    "duration" : 2506
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a57bda3385ebf48",
+  "name" : "Check Details Button",
+  "time" : {
+    "start" : 1635418987361,
+    "stop" : 1635418989874,
+    "duration" : 2513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4b221891e91610b",
+  "name" : "Check that New Collection is displayed",
+  "time" : {
+    "start" : 1635174771667,
+    "stop" : 1635174774821,
+    "duration" : 3154
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "959a171461fae069",
+  "name" : "Check title of brands section",
+  "time" : {
+    "start" : 1635419020531,
+    "stop" : 1635419020550,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f06967f6b9459e35",
+  "name" : "Filters are displayed",
+  "time" : {
+    "start" : 1635418969060,
+    "stop" : 1635418984459,
+    "duration" : 15399
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57cd2962fc29932e",
+  "name" : "Check title of Popular container",
+  "time" : {
+    "start" : 1635419009385,
+    "stop" : 1635419009402,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5ed7fcb1f6bd305",
+  "name" : "Check the title of marketbox",
+  "time" : {
+    "start" : 1635418995617,
+    "stop" : 1635418995628,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "914afee152d7103a",
+  "name" : "Check that number sort is displayed",
+  "time" : {
+    "start" : 1635418918448,
+    "stop" : 1635418920100,
+    "duration" : 1652
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9083759e627317d0",
+  "name" : "Check that colour filter work",
+  "time" : {
+    "start" : 1635418908751,
+    "stop" : 1635418910768,
+    "duration" : 2017
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e43b5106f950978",
+  "name" : "Check transition to news page",
+  "time" : {
+    "start" : 1635165163726,
+    "stop" : 1635165170030,
+    "duration" : 6304
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4c0a2122a156425",
+  "name" : "Check transition to catalog",
+  "time" : {
+    "start" : 1635418995628,
+    "stop" : 1635418999759,
+    "duration" : 4131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b54b08894e2e61d4",
+  "name" : "Check that Brands section is displayed",
+  "time" : {
+    "start" : 1635419018531,
+    "stop" : 1635419020531,
+    "duration" : 2000
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5785eebb71721128",
+  "name" : "Check See all new products of New collection",
+  "time" : {
+    "start" : 1635418989874,
+    "stop" : 1635418991832,
+    "duration" : 1958
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "805a17a7ae62707c",
+  "name" : "ClickOnEveryLinkOnNavbarAsMan",
+  "time" : {
+    "start" : 1635418939726,
+    "stop" : 1635418957219,
+    "duration" : 17493
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7916f3685c8c936",
+  "name" : "ClickOnEveryLinkOnNavbarAsWoman",
+  "time" : {
+    "start" : 1635418921055,
+    "stop" : 1635418939726,
+    "duration" : 18671
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24825de97ffd4ef8",
+  "name" : "Check that sorting filter work",
+  "time" : {
+    "start" : 1635418904802,
+    "stop" : 1635418904918,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2a7d90f74fa9b10",
+  "name" : "Check that news are displayed",
+  "time" : {
+    "start" : 1635419013424,
+    "stop" : 1635419015405,
+    "duration" : 1981
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a53dd35cf528e82c",
+  "name" : "Check that sale filter work",
+  "time" : {
+    "start" : 1635418906937,
+    "stop" : 1635418908750,
+    "duration" : 1813
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89da541ff5585619",
+  "name" : "Click on More News button",
+  "time" : {
+    "start" : 1635419015419,
+    "stop" : 1635419015760,
+    "duration" : 341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15da83daaca89abd",
+  "name" : "Check transition to product card",
+  "time" : {
+    "start" : 1635419009489,
+    "stop" : 1635419009489,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4ebc3717e05f5e4e",
+  "name" : "Check SeeAll section is displayed",
+  "time" : {
+    "start" : 1635419020961,
+    "stop" : 1635419023268,
+    "duration" : 2307
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e9d7a2ffe262a60",
+  "name" : "Check that fason filter work",
+  "time" : {
+    "start" : 1635418914683,
+    "stop" : 1635418916697,
+    "duration" : 2014
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4371e197470525a",
+  "name" : "Check title of brands section",
+  "time" : {
+    "start" : 1635165162641,
+    "stop" : 1635165162711,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "470cc0a8abae78c1",
+  "name" : "Check that Popular continer is displayed",
+  "time" : {
+    "start" : 1635419006811,
+    "stop" : 1635419009385,
+    "duration" : 2574
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9b328361cacce0f",
+  "name" : "Check that cost filter work",
+  "time" : {
+    "start" : 1635418904918,
+    "stop" : 1635418906937,
+    "duration" : 2019
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24ef176eb2921ccb",
+  "name" : "Check that size filter work",
+  "time" : {
+    "start" : 1635418910768,
+    "stop" : 1635418912802,
+    "duration" : 2034
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c9a0c427f91a9fe",
+  "name" : "Check the title of News section",
+  "time" : {
+    "start" : 1635165162998,
+    "stop" : 1635165163005,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79506e3069f74ab0",
+  "name" : "Check that brand filter work",
+  "time" : {
+    "start" : 1635418912802,
+    "stop" : 1635418914682,
+    "duration" : 1880
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd7007cb573e3bcd",
+  "name" : "Check the title of News section",
+  "time" : {
+    "start" : 1635419015405,
+    "stop" : 1635419015419,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d749a12b8b25234",
+  "name" : "Check flipping the pictures",
+  "time" : {
+    "start" : 1635418991832,
+    "stop" : 1635418993280,
+    "duration" : 1448
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18d841564949ef12",
+  "name" : "Check SeeAll section is displayed",
+  "time" : {
+    "start" : 1635165168823,
+    "stop" : 1635165172512,
+    "duration" : 3689
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "644b02d1665d3a69",
+  "name" : "Click on More News button",
+  "time" : {
+    "start" : 1635165163006,
+    "stop" : 1635165163726,
+    "duration" : 720
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66fad62f70523f78",
+  "name" : "Check the tile of New collection",
+  "time" : {
+    "start" : 1635418987341,
+    "stop" : 1635418987361,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49d613919928122d",
+  "name" : "Check that news are displayed",
+  "time" : {
+    "start" : 1635165154947,
+    "stop" : 1635165162998,
+    "duration" : 8051
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45d0621905876a67",
+  "name" : "Check transition to news page",
+  "time" : {
+    "start" : 1635419015760,
+    "stop" : 1635419018082,
+    "duration" : 2322
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "872f2fb3d16fbaf2",
+  "name" : "MainPageIsLoaded",
+  "time" : {
+    "start" : 1635419000179,
+    "stop" : 1635419003522,
+    "duration" : 3343
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8507816ebd21a992",
+  "name" : "Check that New Collection is displayed",
+  "time" : {
+    "start" : 1635418985412,
+    "stop" : 1635418987341,
+    "duration" : 1929
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "363cf5d50a7ebbd9",
+  "name" : "CheckingOtherLinksInNavbar",
+  "time" : {
+    "start" : 1635418959500,
+    "stop" : 1635418967710,
+    "duration" : 8210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99475cbf3818f244",
+  "name" : "Check that banners are shown",
+  "time" : {
+    "start" : 1635419023755,
+    "stop" : 1635419025800,
+    "duration" : 2045
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1df39f0e1306a57",
+  "name" : "CheckSwitchingBanners",
+  "time" : {
+    "start" : 1635419025800,
+    "stop" : 1635419025800,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]
