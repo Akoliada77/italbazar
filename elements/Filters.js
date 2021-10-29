@@ -85,7 +85,7 @@ export default class Filters {
         await click(page,'#root > div:nth-child(3) > div > div > div.desktop_page_titleBox__3aVbX > div > div > div > div > div > div.css-1ort343')
         expect(await isElementVisible('.css-13tnpzo')).to.be.true
         await click(page,'#react-select-2-option-1')
-        await page.waitForTimeout(2000)
+        await page.waitForTimeout(3000)
         expect(await getCount(page, '.product_card_card__36uRe')).to.eq(48)
         expect(page.url()).to.include('?productsLimit=48')
     }
