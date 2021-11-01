@@ -9,13 +9,14 @@ mainpage = new MainPage()
 
 export default class ProductPage {
     async visit() { 
-        await page.goto('https://www.staging.italbazar.ru/catalog/odezhda/zhenskaya/')
-        await page.waitForSelector('.product_card_card__36uRe')
+        await page.goto('https://www.staging.italbazar.ru/')
         await mainpage.closeCookie()
-        let pr = await page.$$('[class="product_card_container__1UHDe"]')
-        await pr[0].click()
-        await page.waitForNavigation()
-        expect(await isElementVisible('.product_images_slider_container__3gqX1.product-cart-images-slider')).to.be.true
+        let but = await page.$$('.gray_link_button_link__c70FC')
+        await but[4].click()
+        expect(await isElementVisible('.product_card_container__1UHDe')).to.be.true
+        await page.waitForTimeout(2000)
+        let pr = await page.$$('.product_card_container__1UHDe')
+        await pr[1].click()
         expect(await isElementVisible('.desktop_product_page_container__2HFDF')).to.be.true
     }
 }
