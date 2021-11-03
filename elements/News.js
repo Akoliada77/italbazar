@@ -16,8 +16,8 @@ export default class News {
         expect(await getText(page, '.desktop_news_title__1d0qY')).to.equal('Новости')
     }
     async checkButtonMoreNews() {
-        expect(await isElementVisible('#root > div:nth-child(14) > div > div > div:nth-child(1) > div.desktop_news_button__1yXTL > a > div')).to.be.true
-        await click(page, '#root > div:nth-child(14) > div > div > div:nth-child(1) > div.desktop_news_button__1yXTL > a > div > span:nth-child(1)')
+        expect(await isElementVisible('.desktop_news_button__1yXTL')).to.be.true
+        await click(page, '.desktop_news_button__1yXTL')
         await page.waitForSelector('.news_page_newsBox__26fpM')
         expect(page.url()).to.equal('https://www.staging.italbazar.ru/news/')
     }
