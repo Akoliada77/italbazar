@@ -36,8 +36,15 @@ export default class Productinfo {
         // expect(await isElementVisible('.pink_boxed_button_box__3ELgq.cart_button_addToCartButton__1k4aa')).to.be.true // add to cart button
     }
     async addingProductToCart() {
-        const name = await page.$$('.main_info_block_productName__1qmIM')
-        await getText(page, name[0])
-        console.log(name[0])
+        // const name = await page.$$('.main_info_block_productName__1qmIM')
+        // await getText(page, name)
+        const name = await getText(page, '#root > div:nth-child(4) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productName__1qmIM')
+        const brand = await getText(page, '#root > div:nth-child(4) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_head__2thrj > div > h1.main_info_block_productBrand__2K-5p')
+        const cost = await getText(page, '#root > div:nth-child(4) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_priceBlock__2XeTd > div.main_info_block_currentPrice__31hdv > span')
+        const colour = await getText(page, '#root > div:nth-child(4) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_color__3a5vs > span')
+        await page.select('#root > div:nth-child(4) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div.main_info_block_sizes__23Svn > div > div > div.css-1hwfws3 > div', 'S')
+        await click(page, '#root > div:nth-child(4) > div > div > div.desktop_product_page_container__2HFDF > div.desktop_product_page_productInfo__2UahX > div:nth-child(7) > div > div:nth-child(1) > div')
+        await click(page, '.shopping_bag_icon_cartButton__UxezY')
+        expect(await isElementVisible('.cart_desktop_productsBox__3tv_q')).to.be.true
     }
 }
