@@ -1,4 +1,114 @@
 {
-  "total" : 0,
-  "items" : [ ]
+  "total" : 11,
+  "items" : [ {
+    "uid" : "90d3ab58d4cfcf7c6569dcd091ced6f9",
+    "name" : "Checking new collection in Mainpage",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "eae7532407824d9d2395180dc07608ad",
+    "name" : "Checking filters in CatalogPage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
+    "uid" : "9d9a8c063a61ac7e1c3ee4b42ee96097",
+    "name" : "Checking brands in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "b471c69dc29b89a2f7ef53b5771574b2",
+    "name" : "Checking news in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "49a902e6b279235ca5c2af32e22a660c",
+    "name" : "Checking popular container in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "e58ae706050cedc3b744a7172dcb6ac8",
+    "name" : "Checking navbar in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "8a5b97a68ed48bbd3fb03005c60b2dea",
+    "name" : "Checking header in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "3126bae497296a57645df53f319a58d9",
+    "name" : "Checking SeeAll in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "e68f3824a4f202bac0b7b95f85f2d765",
+    "name" : "Checking marketbox in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "9a6c4904a8685f8e785e03cb61d56482",
+    "name" : "Checking banner in Mainpage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 3
+    }
+  } ]
 }

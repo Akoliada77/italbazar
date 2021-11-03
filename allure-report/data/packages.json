@@ -1,5 +1,712 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "a",
+    "children" : [ {
+      "name" : "Check that product container is displayed",
+      "uid" : "a5de1ba3f522726f",
+      "parentUid" : "949e5848d8d7f1058ceb1a699a9a139b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971116846,
+        "stop" : 1635971123875,
+        "duration" : 7029
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "949e5848d8d7f1058ceb1a699a9a139b"
+  }, {
+    "name" : "Checking navbar in Mainpage",
+    "children" : [ {
+      "name" : "ClickOnEveryLinkOnNavbarAsWoman",
+      "uid" : "892037b79b0885e8",
+      "parentUid" : "6004023b176ebd4b1a09596e638ef8ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971124331,
+        "stop" : 1635971141640,
+        "duration" : 17309
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ClickOnEveryLinkOnNavbarAsMan",
+      "uid" : "9c50434f25967f15",
+      "parentUid" : "6004023b176ebd4b1a09596e638ef8ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971141640,
+        "stop" : 1635971159580,
+        "duration" : 17940
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "CheckMiddleNavbar",
+      "uid" : "a738dc7d57d8272d",
+      "parentUid" : "6004023b176ebd4b1a09596e638ef8ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971159580,
+        "stop" : 1635971162437,
+        "duration" : 2857
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "CheckingOtherLinksInNavbar",
+      "uid" : "6facad62b2274548",
+      "parentUid" : "6004023b176ebd4b1a09596e638ef8ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971162437,
+        "stop" : 1635971171064,
+        "duration" : 8627
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6004023b176ebd4b1a09596e638ef8ed"
+  }, {
+    "name" : "Checking filters in CatalogPage",
+    "children" : [ {
+      "name" : "Filters are displayed",
+      "uid" : "34ff3b0dc7af60df",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971171414,
+        "stop" : 1635971173195,
+        "duration" : 1781
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that sorting filter work",
+      "uid" : "fb74b3844cab2c63",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971173195,
+        "stop" : 1635971173318,
+        "duration" : 123
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that cost filter work",
+      "uid" : "19e6a0226a17d618",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971173318,
+        "stop" : 1635971175822,
+        "duration" : 2504
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that sale filter work",
+      "uid" : "b37d86e72746ec9",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971175822,
+        "stop" : 1635971177629,
+        "duration" : 1807
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that colour filter work",
+      "uid" : "d119bbda7dbcfa67",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971177629,
+        "stop" : 1635971179722,
+        "duration" : 2093
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that size filter work",
+      "uid" : "cef7c3fa10c159e2",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971179722,
+        "stop" : 1635971181482,
+        "duration" : 1760
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that brand filter work",
+      "uid" : "13a09df63a17baf9",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971181482,
+        "stop" : 1635971183223,
+        "duration" : 1741
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that fason filter work",
+      "uid" : "a50ace6738a43417",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971183223,
+        "stop" : 1635971185539,
+        "duration" : 2316
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that seasons filter work",
+      "uid" : "c59812f3319e29f5",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971185539,
+        "stop" : 1635971187330,
+        "duration" : 1791
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that material filter work",
+      "uid" : "b31e3f0b79364acb",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1635971185539,
+        "stop" : 1635971185539,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that number sort is displayed",
+      "uid" : "18465474d64d28a9",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971187330,
+        "stop" : 1635971188832,
+        "duration" : 1502
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that number sort works",
+      "uid" : "1e587133315b5852",
+      "parentUid" : "1fb30dce4d4f3dc5938f6f4efa469f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971188832,
+        "stop" : 1635971193434,
+        "duration" : 4602
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1fb30dce4d4f3dc5938f6f4efa469f97"
+  }, {
+    "name" : "Checking new collection in Mainpage",
+    "children" : [ {
+      "name" : "Check that New Collection is displayed",
+      "uid" : "e4fd81dbd6b41def",
+      "parentUid" : "eaea6e4ac1215ee5ff5b0781591eb7ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971194265,
+        "stop" : 1635971196542,
+        "duration" : 2277
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check the tile of New collection",
+      "uid" : "c38d10bc294601f9",
+      "parentUid" : "eaea6e4ac1215ee5ff5b0781591eb7ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971196542,
+        "stop" : 1635971196562,
+        "duration" : 20
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check Details Button",
+      "uid" : "eb7c13da6efd6bc2",
+      "parentUid" : "eaea6e4ac1215ee5ff5b0781591eb7ad",
+      "status" : "failed",
+      "time" : {
+        "start" : 1635971196562,
+        "stop" : 1635971197627,
+        "duration" : 1065
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check See all new products of New collection",
+      "uid" : "7cca343441d72b00",
+      "parentUid" : "eaea6e4ac1215ee5ff5b0781591eb7ad",
+      "status" : "failed",
+      "time" : {
+        "start" : 1635971197627,
+        "stop" : 1635971199860,
+        "duration" : 2233
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check flipping the pictures",
+      "uid" : "8137a1652cb0a12c",
+      "parentUid" : "eaea6e4ac1215ee5ff5b0781591eb7ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971199860,
+        "stop" : 1635971201328,
+        "duration" : 1468
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "eaea6e4ac1215ee5ff5b0781591eb7ad"
+  }, {
+    "name" : "Checking brands in Mainpage",
+    "children" : [ {
+      "name" : "Check that Brands section is displayed",
+      "uid" : "e48151911740c9cd",
+      "parentUid" : "b3972a06d054e193a9f578e9454acb38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971201813,
+        "stop" : 1635971204838,
+        "duration" : 3025
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check title of brands section",
+      "uid" : "41fd136fbfff59ba",
+      "parentUid" : "b3972a06d054e193a9f578e9454acb38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971204838,
+        "stop" : 1635971204848,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that Contact block is displayed",
+      "uid" : "d17afb3de1489450",
+      "parentUid" : "b3972a06d054e193a9f578e9454acb38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971217710,
+        "stop" : 1635971220057,
+        "duration" : 2347
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that Callback form is displayed",
+      "uid" : "5a36b026abf6ce8f",
+      "parentUid" : "b3972a06d054e193a9f578e9454acb38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971220057,
+        "stop" : 1635971220258,
+        "duration" : 201
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check hovers of Contact block",
+      "uid" : "97eb200e825b9034",
+      "parentUid" : "b3972a06d054e193a9f578e9454acb38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971220258,
+        "stop" : 1635971221885,
+        "duration" : 1627
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b3972a06d054e193a9f578e9454acb38"
+  }, {
+    "name" : "Checking header in Mainpage",
+    "children" : [ {
+      "name" : "MainPageIsLoaded",
+      "uid" : "8fd2029ba0cf9c55",
+      "parentUid" : "37611399cafe1d19c6ab07047ebb0fab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971205271,
+        "stop" : 1635971207473,
+        "duration" : 2202
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "CookieAreAccepted",
+      "uid" : "2c96c9e537442020",
+      "parentUid" : "37611399cafe1d19c6ab07047ebb0fab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971207473,
+        "stop" : 1635971207475,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "ClickOnEveryLinkInHeader",
+      "uid" : "46f3266710cb25d5",
+      "parentUid" : "37611399cafe1d19c6ab07047ebb0fab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971207475,
+        "stop" : 1635971210466,
+        "duration" : 2991
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that phone number is displayed",
+      "uid" : "8f18484cc831cf78",
+      "parentUid" : "37611399cafe1d19c6ab07047ebb0fab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971210466,
+        "stop" : 1635971210470,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "37611399cafe1d19c6ab07047ebb0fab"
+  }, {
+    "name" : "Checking marketbox in Mainpage",
+    "children" : [ {
+      "name" : "Check that marketbox is loaded",
+      "uid" : "7a3c472d64a03d8e",
+      "parentUid" : "21e44cf8925985116499b0d276c343fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971210872,
+        "stop" : 1635971213244,
+        "duration" : 2372
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check the title of marketbox",
+      "uid" : "2b4d3844095c70ac",
+      "parentUid" : "21e44cf8925985116499b0d276c343fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971213244,
+        "stop" : 1635971213273,
+        "duration" : 29
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check transition to catalog",
+      "uid" : "74fabb7a04d15a23",
+      "parentUid" : "21e44cf8925985116499b0d276c343fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971213273,
+        "stop" : 1635971217461,
+        "duration" : 4188
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "21e44cf8925985116499b0d276c343fa"
+  }, {
+    "name" : "Checking news in Mainpage",
+    "children" : [ {
+      "name" : "Check that news are displayed",
+      "uid" : "d44b1782a932696f",
+      "parentUid" : "804dfa3bba0feb991b313708a5de6975",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971222810,
+        "stop" : 1635971225389,
+        "duration" : 2579
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check the title of News section",
+      "uid" : "177df1925ccad86",
+      "parentUid" : "804dfa3bba0feb991b313708a5de6975",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971225390,
+        "stop" : 1635971225394,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on More News button",
+      "uid" : "b54cda1325ad043a",
+      "parentUid" : "804dfa3bba0feb991b313708a5de6975",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971225394,
+        "stop" : 1635971225978,
+        "duration" : 584
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check transition to news page",
+      "uid" : "f43f5904c4dc3437",
+      "parentUid" : "804dfa3bba0feb991b313708a5de6975",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971225978,
+        "stop" : 1635971228384,
+        "duration" : 2406
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that product container is displayed",
+      "uid" : "5e1e3d44bb9f148e",
+      "parentUid" : "804dfa3bba0feb991b313708a5de6975",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971242318,
+        "stop" : 1635971247491,
+        "duration" : 5173
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "804dfa3bba0feb991b313708a5de6975"
+  }, {
+    "name" : "Checking popular container in Mainpage",
+    "children" : [ {
+      "name" : "Check that Popular continer is displayed",
+      "uid" : "86ce8a928d4cbd5b",
+      "parentUid" : "0bedd01ce47b3717e6a220cc76ffdab4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971228865,
+        "stop" : 1635971231143,
+        "duration" : 2278
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check title of Popular container",
+      "uid" : "98dd102cb6f3c560",
+      "parentUid" : "0bedd01ce47b3717e6a220cc76ffdab4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971231143,
+        "stop" : 1635971231158,
+        "duration" : 15
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check hover of product is displayed",
+      "uid" : "da05d4af3b448d0b",
+      "parentUid" : "0bedd01ce47b3717e6a220cc76ffdab4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971231158,
+        "stop" : 1635971231261,
+        "duration" : 103
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check About button in popular section",
+      "uid" : "8f9ae86e68f38b33",
+      "parentUid" : "0bedd01ce47b3717e6a220cc76ffdab4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971231261,
+        "stop" : 1635971233020,
+        "duration" : 1759
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check transition to product card",
+      "uid" : "323a2ec7314d699f",
+      "parentUid" : "0bedd01ce47b3717e6a220cc76ffdab4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1635971231261,
+        "stop" : 1635971231261,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0bedd01ce47b3717e6a220cc76ffdab4"
+  }, {
+    "name" : "Checking banner in Mainpage",
+    "children" : [ {
+      "name" : "Check that banners are shown",
+      "uid" : "dd9bb56986588027",
+      "parentUid" : "218f62867d44bfbfe11139300300d0ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971233444,
+        "stop" : 1635971235775,
+        "duration" : 2331
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "CheckCarouselIsDisplayed",
+      "uid" : "842ad297ed4e8940",
+      "parentUid" : "218f62867d44bfbfe11139300300d0ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971235775,
+        "stop" : 1635971235776,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "CheckSwitchingBanners",
+      "uid" : "c7a566f4bb35385f",
+      "parentUid" : "218f62867d44bfbfe11139300300d0ba",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1635971235775,
+        "stop" : 1635971235775,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "218f62867d44bfbfe11139300300d0ba"
+  }, {
+    "name" : "Checking SeeAll in Mainpage",
+    "children" : [ {
+      "name" : "Check SeeAll section is displayed",
+      "uid" : "75824825e71df031",
+      "parentUid" : "ec04a7534e2b9a72bbe26025ed058f2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971236158,
+        "stop" : 1635971239520,
+        "duration" : 3362
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that Discountsub is displayed",
+      "uid" : "f72f3a5baa16fae1",
+      "parentUid" : "ec04a7534e2b9a72bbe26025ed058f2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971239737,
+        "stop" : 1635971241912,
+        "duration" : 2175
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check title of Discountsub section",
+      "uid" : "db1d2b8884c99b2b",
+      "parentUid" : "ec04a7534e2b9a72bbe26025ed058f2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1635971241912,
+        "stop" : 1635971241945,
+        "duration" : 33
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Check that checkboxes work",
+      "uid" : "dba060ed263ad3a3",
+      "parentUid" : "ec04a7534e2b9a72bbe26025ed058f2f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1635971241945,
+        "stop" : 1635971241945,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ec04a7534e2b9a72bbe26025ed058f2f"
+  } ],
   "name" : "packages"
 }

@@ -22,11 +22,13 @@ export default class Marketbox {
         expect(await isXpathVisible('//*[@id="root"]/div[10]/div/div/div[1]/text()')).to.be.true
     }
     async checkTransitionToCatalog() {
-        await click(page, '#root > div:nth-child(10) > div > div > div.desktop_marketing_info_imagesBox__3X1EW > a:nth-child(1) > div > div.desktop_marketing_info_imageText__y9tBj')
+        const sections = await page.$$('.desktop_marketing_info_image__1CcMP')
+        await sections[0].click()
         await page.waitForNavigation()
         expect(page.url()).to.include('https://www.staging.italbazar.ru/catalog/')
         await mainpage.visit()
-        await click(page, '#root > div:nth-child(10) > div > div > div.desktop_marketing_info_imagesBox__3X1EW > a:nth-child(2) > div > div.desktop_marketing_info_imageText__y9tBj')
+        const button = await page.$$('.desktop_marketing_info_image__1CcMP')
+        await button[1].click()
         await page.waitForNavigation()
         expect(page.url()).to.include('https://www.staging.italbazar.ru/catalog/')
     }

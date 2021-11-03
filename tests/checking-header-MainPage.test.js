@@ -26,4 +26,7 @@ describe ('Checking header in Mainpage', () => {
         await mainpage.clickOnDelivery()
         await mainpage.clickOnShops()
     })
+    it('Check that phone number is displayed', async() =>{
+        await mainpage.checkPhoneNumberisDisplayed()
+    })
 })

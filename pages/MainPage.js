@@ -1,5 +1,5 @@
 import { expect } from "chai"
-const { waitForText, shouldNotExist, click, getText, getCount, typeText, selectText } = require("../lib/helpers")
+const { waitForText, shouldNotExist, click, getText, getCount, typeText, selectText, isElementVisible, isXpathVisible } = require("../lib/helpers")
 const { generateID, generateEmail } = require("../lib/utils")
 
 
@@ -19,7 +19,8 @@ export default class MainPage {
         // expect(cookies.jsonValue()).to.have.property('cookiesAccepted', {name: 'cookiesAccepted'})
     }
     async clickOnAboutUs() {
-        await click (page, '#root > div:nth-child(2) > div > div.top_header_box__2h_A3 > div > nav > a:nth-child(1) > div > div')
+        const but = await page.$$('.undefined.top_header_block__2jCyz')
+        await but[0].click()
         await page.waitForNavigation()
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/about/')
@@ -36,5 +37,8 @@ export default class MainPage {
         await shouldNotExist(page, '.stores_button_dropdownContent__r0-b-')
         await click(page, '.dotted_button_button__mDsw6')
         await page.waitForSelector('.stores_button_dropdownContent__r0-b-')
+    }
+    async checkPhoneNumberisDisplayed() {
+        expect(await isElementVisible('.top_header_phone_number__1kQTQ.top_header_block__2jCyz')).to.be.true
     }
 }

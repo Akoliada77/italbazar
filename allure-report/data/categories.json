@@ -1,5 +1,43 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Error: TypeError: Cannot read properties of undefined (reading 'success')\n                    at https://www.staging.italbazar.ru/_next/static/chunks/661-bc30ab58d38c19ae2593.js:1:14471",
+      "children" : [ {
+        "name" : "Check Details Button",
+        "uid" : "eb7c13da6efd6bc2",
+        "parentUid" : "5042db316ddf6c5518fb939cae87b3ee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635971196562,
+          "stop" : 1635971197627,
+          "duration" : 1065
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5042db316ddf6c5518fb939cae87b3ee"
+    }, {
+      "name" : "Error: net::ERR_ABORTED at https://www.staging.italbazar.ru",
+      "children" : [ {
+        "name" : "Check See all new products of New collection",
+        "uid" : "7cca343441d72b00",
+        "parentUid" : "2cdb6e8d7444e07d16dbc0f974742971",
+        "status" : "failed",
+        "time" : {
+          "start" : 1635971197627,
+          "stop" : 1635971199860,
+          "duration" : 2233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2cdb6e8d7444e07d16dbc0f974742971"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }

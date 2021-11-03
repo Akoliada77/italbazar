@@ -22,8 +22,8 @@ export default class News {
         expect(page.url()).to.equal('https://www.staging.italbazar.ru/news/')
     }
     async checkTransitionToNews() {
-        const title = await getText(page, '#root > div:nth-child(14) > div > div > div.undefined.shop-news-carousel.slider-with-round-arrows > div > div > div > div.slick-slide.slick-active.slick-current > div > a:nth-child(1) > div > div.news_slider_title__PcclQ')
-        await click(page, '#root > div:nth-child(14) > div > div > div.undefined.shop-news-carousel.slider-with-round-arrows > div > div > div > div.slick-slide.slick-active.slick-current > div > a:nth-child(1) > div > div.news_slider_image__GGTyl')
+        const title = await getText(page, '#root > div:nth-child(15) > div > div > div.undefined.shop-news-carousel.slider-with-round-arrows > div > div > div > div.slick-slide.slick-active.slick-current > div > a:nth-child(1) > div > div.news_slider_title__PcclQ')
+        await click(page, '#root > div:nth-child(15) > div > div > div.undefined.shop-news-carousel.slider-with-round-arrows > div > div > div > div.slick-slide.slick-active.slick-current > div > a:nth-child(1) > div')
         expect(await isElementVisible('.news_big_post_container__sJU9e')).to.be.true
         expect(await getText(page, '.news_big_post_title__1eODi')).to.eq(title)
         expect(await getText(page, '#root > div.page_layout_container__2vfVI > div > div.news_big_post_contentBox__3vh1s > div.news_big_post_nav__3p4tt > div > span:nth-child(3) > a')).to.equal(title)

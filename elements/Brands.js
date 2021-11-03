@@ -13,7 +13,7 @@ export default class Brands {
         expect(await isElementVisible('.slick-slider.desktop_slider_box__3V8-3.slick-initialized')).to.be.true
     }
     async checkTitleOfBrands() {
-        let title = await getText(page, '#root > div:nth-child(10) > div > div > div.desktop_marketing_info_brands__2XHmD > span')
+        let title = await getText(page, '.desktop_marketing_info_brandsTitle__3m1Fl')
         expect(title).to.eq('150')
         expect(await isXpathVisible('//*[@id="root"]/div[10]/div/div/div[3]/text()')).to.be.true
     }
