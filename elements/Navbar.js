@@ -18,14 +18,16 @@ export default class Navbar {
         expect(title).to.equal('Избранное')
     }
     async clickOnClothes() {
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(1) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[0].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/odezhda/zhenskaya/')
     }
     async clickOnShoes() {
         await mainpage.visit()
-        await click (page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(2) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[1].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/obuv/zhenskaya/')
@@ -42,7 +44,8 @@ export default class Navbar {
     }
     async clickOnАccessories() {
         await mainpage.visit()
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(3) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[2].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/aksessuary/zhenskie/')
@@ -50,7 +53,8 @@ export default class Navbar {
     async clickOnForGirls() {
         await mainpage.visit()
         await page.waitForTimeout(1500)
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(4) > div > div > div > a > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[3].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/dlya_detey/dlya_devochek/') 
@@ -78,21 +82,24 @@ export default class Navbar {
         await page.waitForTimeout(1500)
     }
     async clickOnClothesMan() {
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(1) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[0].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/odezhda/muzhskaya/')
     }
     async clickOnShoesMan() {
         await mainpage.visit()
-        await click (page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(2) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[1].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/obuv/muzhskaya/')
     }
     async clickOnАccessoriesMan() {
         await mainpage.visit()
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(3) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[2].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/aksessuary/muzhskie/')
@@ -100,37 +107,57 @@ export default class Navbar {
     async clickOnForBoys() {
         await mainpage.visit()
         await page.waitForTimeout(1500)
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(4) > div > div > div > a > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[3].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/dlya_detey/dlya_malchikov/') 
     }
     async clickOnForHome() {
         await mainpage.visit()
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(5) > div > div > div > a > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[4].click()
         await page.waitForSelector('.desktop_page_h1__2Jzco')
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/dlya_doma/') 
     }
     async clickOnBrands() {
         await mainpage.visit()
-        await click(page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(6)')
+        await click(page, '.bottom_header_justLinks__2R0HI')
         expect(await isElementVisible('.available_brands_container__3X9Mz')).to.be.true
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/brands/') 
     }
     async clickOnNewProducts() {
         await mainpage.visit()
-        await click (page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(7) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[5].click()
         expect(await isElementVisible('.breadcrumbs_container__36FaE')).to.be.true
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/new/dlya_zhenshin/')
     }
     async clickOnNewProductsAsMan() {
         await mainpage.visit()
-        await click (page, '#root > div:nth-child(2) > div > div:nth-child(3) > div > nav > div.bottom_header_navBlockButtonsContainer__2Tg5P > div:nth-child(7) > div > div')
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[5].click()
         expect(await isElementVisible('.breadcrumbs_container__36FaE')).to.be.true
         let url = page.url()
         expect(url).to.equal('https://www.staging.italbazar.ru/catalog/new/dlya_muzhchin/')
+    }
+    async clickOnSale() {
+        await mainpage.visit()
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[6].click()
+        expect(await isElementVisible('.breadcrumbs_container__36FaE')).to.be.true
+        let url = page.url()
+        expect(url).to.equal('https://www.staging.italbazar.ru/catalog/sale/dlya_zhenshchin/')
+    }
+    async clickOnSaleAsMan() {
+        await mainpage.visit()
+        const navbar = await page.$$('.bottom_header_button_button__9n5-I')
+        await navbar[6].click()
+        expect(await isElementVisible('.breadcrumbs_container__36FaE')).to.be.true
+        let url = page.url()
+        expect(url).to.equal('https://www.staging.italbazar.ru/catalog/sale/dlya_muzhchin/')
     }
 }
