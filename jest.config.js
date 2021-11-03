@@ -9,7 +9,7 @@ module.exports = {
 
   // Stop running tests after `n` failures
   // bail: 0,
-  bail: 5,
+  bail: 10,
 
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/private/var/folders/mc/ct95ls2x14373rj564rwggc00000gn/T/jest_dx",
