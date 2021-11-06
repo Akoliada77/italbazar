@@ -2,7 +2,7 @@ import MainPage from '../pages/MainPage'
 import Productinfo from '../elements/Productinfo'
 import ProductPage from '../pages/ProductPage'
 
-describe ('Checking news in Mainpage', () => {
+describe ('Checking product container in Mainpage', () => {
     let mainpage
     let productinfo
     let productpage

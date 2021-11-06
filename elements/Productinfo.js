@@ -13,7 +13,8 @@ productpage = new ProductPage()
 
 export default class Productinfo {
     async isProductInfoContainerDisplayed() {
-        expect(await isElementVisible('.desktop_product_page_productInfo__2UahX')).to.be.true
+        await page.waitForSelector('.desktop_product_page_productInfo__2UahX')
+        // expect(await isElementVisible('.desktop_product_page_productInfo__2UahX')).to.be.true
     }
     async checkElementsOfProductInfoAreDisplayed() {
         // expect(await isElementVisible('.main_info_block_vendorCode__rBRMJ')).to.be.true // articul

@@ -2,21 +2,27 @@ import { expect } from "chai"
 const { click, doubleClick, getCount, getText, rightClick, selectText, shouldNotExist, typeText, isElementVisible, isXpathVisible } = require('../lib/helpers')
 const { generateEmail, generateID, generateNumbers } = require('../lib/utils')
 import MainPage from '../pages/MainPage'
+import Navbar from '../elements/navbar'
 
 let mainpage
+let navbar
 
 mainpage = new MainPage()
+navbar = new Navbar()
 
 export default class ProductPage {
     async visit() { 
-        await page.goto('https://www.staging.italbazar.ru/')
+        await mainpage.visit()
         await mainpage.closeCookie()
-        let but = await page.$$('.gray_link_button_link__c70FC')
-        await but[4].click()
-        expect(await isElementVisible('.product_card_container__1UHDe')).to.be.true
-        await page.waitForTimeout(2000)
-        let pr = await page.$$('.product_card_container__1UHDe')
-        await pr[1].click()
+        await navbar.chooseWoman()
+        let clothes = await page.$$('.bottom_header_button_button__9n5-I')
+        await clothes[0].click()
+        await page.waitForNavigation()
+        expect(page.url()).to.eq('https://www.staging.italbazar.ru/catalog/odezhda/zhenskaya/')
+        let pr = await page.$$('.product_card_hoverPreview__2AYHm')
+        // await pr[0].click()
+        await pr[0].evaluate(a => a.click());
+        await page.waitForNavigation()
         expect(await isElementVisible('.desktop_product_page_container__2HFDF')).to.be.true
     }
 }
