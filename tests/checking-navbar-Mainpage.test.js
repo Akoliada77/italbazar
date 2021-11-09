@@ -13,7 +13,7 @@ describe ('Checking navbar in Mainpage', () => {
         navbar = new Navbar()
         banner = new Banner()
     })
-    it('ClickOnEveryLinkOnNavbarAsWoman', async() =>{
+    it('Click OnEveryLinkOnNavbarAsWoman', async() =>{
         await mainpage.visit()
         await mainpage.closeCookie()
         await navbar.chooseWoman()

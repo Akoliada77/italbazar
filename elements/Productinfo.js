@@ -48,4 +48,5 @@ export default class Productinfo {
         await click(page, '.shopping_bag_icon_cartButton__UxezY')
         expect(await isElementVisible('.cart_desktop_productsBox__3tv_q')).to.be.true
     }
+    async 
 }
